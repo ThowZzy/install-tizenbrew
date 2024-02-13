@@ -90,5 +90,5 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: |
-            TizenBrew/release/tizenbrew.wgt
+            TizenBrew/release/Tizenbrew.wgt
           body: "test"
