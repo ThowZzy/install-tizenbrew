@@ -91,5 +91,5 @@ jobs:
         with:
           tag_name: v1.0.0
           files: |
-            TizenBrew/release/Tizenbrew.wgt
+            TizenBrew/release/TizenBrew.wgt
           body: "test"
