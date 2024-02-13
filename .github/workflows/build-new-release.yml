@@ -89,7 +89,7 @@ jobs:
       - name: Release Build Result
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: v1.0.0
+          tag_name: Latest
           files: |
             TizenBrew/release/TizenBrew.wgt
           body: "test"
