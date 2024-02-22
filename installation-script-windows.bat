@@ -33,6 +33,7 @@ cd ide\bin
 call tizen install -n %tizen-dir%\TizenBrew.wgt
 echo =========================================================
 
+cd ../..
 sdb disconnect %userInput%
 
 echo:
