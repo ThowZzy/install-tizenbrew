@@ -89,7 +89,7 @@ jobs:
       - name: Release Build Result
         uses: softprops/action-gh-release@v1
         with:
-          tag_name: ${{ steps.label.outputs.value }}
+          tag_name: ${{ steps.date.outputs.date }}
           files: |
             TizenBrew/release/TizenBrew.wgt
           body: "Pre-built WGT file of TizenBrew"
