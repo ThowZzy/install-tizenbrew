@@ -33,6 +33,8 @@ cd ide\bin
 call tizen install -n %tizen-dir%\TizenBrew.wgt
 echo =========================================================
 
+sdb disconnect %userInput%
+
 echo:
 echo The installation process is over. If all went well, you should have the Launcher and TizenTube installed on your TV.
 echo:
