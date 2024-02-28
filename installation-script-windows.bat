@@ -4,7 +4,7 @@
 set tizen-dir=C:\tizen-studio
 
 ::URL to download wgt files
-set url=https://github.com/ThowZzy/install-tizenbrew/releases/latest/download
+set url=https://github.com/reisxd/TizenBrew/releases/latest/download
 
 ::This line goes to the same drive as tizen studio (if launching from another drive)
 %tizen-dir:~0,1%:
@@ -13,7 +13,7 @@ echo:
 echo =================== WGT Download =====================
 echo Downloading wgt file from releases...
 echo:
-curl -L "%url%/TizenBrew.wgt" -o "%tizen-dir%/TizenBrew.wgt"
+curl -L "%url%/TizenBrewStandalone.wgt" -o "%tizen-dir%/TizenBrewStandalone.wgt"
 echo =======================================================
 
 echo:
@@ -28,9 +28,9 @@ sdb devices
 echo =======================================================
 
 echo:
-echo =========== Installing applications to the TV ===========
+echo =========== Installing TizenBrew to the TV ===========
 cd ide\bin
-call tizen install -n %tizen-dir%\TizenBrew.wgt
+call tizen install -n %tizen-dir%\TizenBrewStandalone.wgt
 echo =========================================================
 
 cd ../..
