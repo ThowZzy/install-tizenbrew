@@ -56,7 +56,7 @@ jobs:
 
       - name: Build
         run: |
-          mv TizenBrewV2/TizenBrew ./TizenBrew
+          mv TizenBrewV2 TizenBrew
           cd TizenBrew
           DISCARD_UNUSED_FONTS=1
           ../tizen-studio/tools/ide/bin/tizen build-web -e ".*" -e gulpfile.js -e README.md -e "node_modules/*" -e "package*.json" -e "yarn.lock"
