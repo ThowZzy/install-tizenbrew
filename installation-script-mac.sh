@@ -4,18 +4,18 @@
 tizen_dir="${HOME}/tizen-studio"
 
 # URL to download wgt files
-url="https://github.com/ThowZzy/install-tizenbrew/releases/latest/download"
-
-echo "=================== WGT Download ====================="
-echo "Downloading wgt files from releases..."
-echo ""
-curl -L "${url}/TizenBrew.wgt" -o "${tizen_dir}/TizenBrew.wgt"
-echo "======================================================="
+url="https://github.com/reisxd/TizenBrew/releases/latest/download"
 
 echo ""
 echo "Type here the IP of your TV (make sure you set TV's dev IP to yours) : "
 read userInput
 echo ""
+
+echo "=================== WGT Download ====================="
+echo "Downloading wgt file from releases..."
+echo ""
+curl -L "${url}/TizenBrewStandalone.wgt" -o "${tizen_dir}/TizenBrewStandalone.wgt"
+echo "======================================================="
 
 echo ""
 echo "================= Connecting to the TV ================"
@@ -27,7 +27,7 @@ echo "======================================================="
 echo ""
 echo "=========== Installing TizenBrew to the TV =========="
 cd "ide/bin"
-./tizen install -n "${tizen_dir}/TizenBrew.wgt"
+./tizen install -n "${tizen_dir}/TizenBrewStandalone.wgt"
 echo "========================================================"
 
 cd ../..

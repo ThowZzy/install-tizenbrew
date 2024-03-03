@@ -10,15 +10,15 @@ set url=https://github.com/reisxd/TizenBrew/releases/latest/download
 %tizen-dir:~0,1%:
 
 echo:
+set /p userInput="Type here the IP of your TV (make sure you set TV's dev IP to yours) : "
+echo:
+
+echo:
 echo =================== WGT Download =====================
 echo Downloading wgt file from releases...
 echo:
 curl -L "%url%/TizenBrewStandalone.wgt" -o "%tizen-dir%/TizenBrewStandalone.wgt"
 echo =======================================================
-
-echo:
-set /p userInput="Type here the IP of your TV (make sure you set TV's dev IP to yours) : "
-echo:
 
 echo:
 echo ================= Connecting to the TV ================
