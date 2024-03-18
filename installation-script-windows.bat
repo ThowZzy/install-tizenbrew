@@ -37,6 +37,6 @@ cd ../..
 sdb disconnect %userInput%
 
 echo:
-echo The installation process is over. If all went well, you should have the Launcher and TizenTube installed on your TV.
+echo The installation process is over. If all went well, you should have TizenBrew installed on your TV.
 echo:
 pause
